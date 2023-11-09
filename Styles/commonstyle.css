@@ -5,13 +5,13 @@ html, body {
 body {
   font-family: "Times New Roman", serif;
 }
-.container-fluid {
+ .container-fluid {
   border : 5px solid;
-}
+} 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
 }
-.inviteCard{
+.inviteCard, #infoSection{
   display: none;
   text-align: center;
 }
