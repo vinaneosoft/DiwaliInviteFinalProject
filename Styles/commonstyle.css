@@ -1,0 +1,32 @@
+html, body {
+  height:100%;
+  background: white;
+} 
+body {
+  font-family: "Times New Roman", serif;
+}
+.container-fluid {
+  border : 5px solid;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+}
+.inviteCard{
+  display: none;
+  text-align: center;
+}
+#spinner{
+  width: 80%;
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+   .container-fluid{
+    height: 100vh;
+  }
+  .imageSection,.inviteCardImage{
+    height: 90%;
+  }
+}

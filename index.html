@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Invite</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Styles/commonstyle.css">
+</head>
+<body>
+  <div class="container-fluid rounded-5" id="inviteContainer">
+    <article id="inviteArticle" class="mt-2">
+      <header>
+        <h1>Happy Diwali!</h1>
+      </header>
+      <section id="inviteSection" class="mt-5">
+        <form  id="inviteForm" method="post">
+          <div  class="mb-3">
+            <label for="empName" class="form-label fw-bold">Enter your full name</label>
+            <input type="text" class="form-control" id="empName"  name="empName" required>
+          </div>
+          <div  class="mb-4">
+            <label for="location" class="form-label fw-bold">Select your location</label>
+            <select id="location" name="location" class="form-select">
+              <option value="Dadar" selected>Dadar</option>
+              <option value="Pune" >Pune</option>
+              <option value="Parel">Parel</option>
+              <option value="Rabale">Rabale</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="submit"  id="submit" class="btn btn-danger btn-lg border border-dark" value="SUBMIT">
+          </div>
+        </form>
+      </section>
+      <section id="spinner">
+        <div class="bg-primary text-white p-2" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          We received your response. Please wait while we confirm your registration...
+        </div>
+      </section>
+    </article>
+  </div>
+  <h2 id="employeeName"  class="text-center mt-3 fw-bolder text-uppercase"></h2>
+  <div id="PuneInvite" class="inviteCard container-fluid rounded-5">    
+    <section class="imageSection">
+      <p>Here is the Event Schedule for PUNE location</p>
+      <img src="Images/PuneInvite.png" class="inviteCardImage img-fluid rounded-3" alt="invitecard1">
+    </section>    
+  </div>
+  <div id="ParelInvite" class="inviteCard container-fluid rounded-5">
+    <p>Here is the Event Schedule for PAREL location</p>
+    <section class="imageSection">
+      <img src="Images/ParelInvite.png" class="inviteCardImage img-fluid rounded-3" alt="invitecard2">
+    </section>   
+  </div>
+  <div id="RabaleInvite" class="inviteCard container-fluid rounded-5">
+    <p>Here is the Event Schedule for RABALE location</p>
+    <section class="imageSection">
+      <img src="Images/RabaleInvite.png" class="inviteCardImage img-fluid rounded-3" alt="invitecard3">
+    </section>  
+  </div>
+  <div id="DadarInvite" class="inviteCard container-fluid rounded-5">
+    <p>Here is the Event Schedule for DADAR location</p>
+    <section class="imageSection">
+      <img src="Images/DadarInvite.png" class="inviteCardImage img-fluid rounded-3" alt="invitecard3">
+    </section>  
+  </div>
+  <div id="CommonInvite" class="inviteCard container-fluid rounded-5">
+    <p>Here is the Event Schedule</p>
+    <section class="imageSection">
+      <img src="Images/DiwaliInvite.png" class="inviteCardImage img-fluid rounded-3" alt="invitecard3">
+    </section>  
+  </div>
+  <!-- Add Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Scripts/MyScript.js"></script>
+</body>
+</html>
