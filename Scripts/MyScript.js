@@ -20,7 +20,6 @@ inviteForm.addEventListener("submit", (e)=>{
 })
 function invite(){
     document.getElementById("employeeName").textContent=empName;
-    document.getElementById("instruction").style.display="block"; 
     if(place==="Pune")
         document.getElementById("PuneInvite").style.display="block";
     else if(place==="Parel")
